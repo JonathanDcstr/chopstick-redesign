@@ -1,0 +1,33 @@
+/*
+    Components: taglines
+    ---
+    styles for taglines/catchphrases, etc.
+*/
+
+.c-tagline {
+    color: $brand-main-text-color;
+    @include padding-bottom(1);
+}
+
+// Modifires
+.c-tagline--header {
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    color: $brand-primary-color;
+    @include margin-top(0.5);
+}
+
+.c-tagline--tiles {
+    font-weight: 900;
+    @include padding-top(2);
+}
+
+.c-tagline--code-example {
+    font-style: italic;
+}
+
+.c-tagline--install {
+    font-weight: 600;
+    font-size: 35px;
+}

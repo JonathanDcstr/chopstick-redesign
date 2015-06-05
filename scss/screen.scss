@@ -1,0 +1,140 @@
+/*
+ *  Chopstick index
+ *  ---
+ *  Chopstick is a framework based on the [ITCSS](http://itcss.io/)
+ *  architecture and a series of principles. It creates a structure
+ *  to easily set-up and build bespoke web projects.
+ *  ---
+ *  The settings and tools layer don't compile any code.
+ *  Therefore they get the number 0 and are put in single line comments.
+ *  ---
+ *
+ *  0. Settings
+ *      - settings.global
+ *      - settings.breakpoints
+ *      - settings.grid
+ *      - settings.colors
+ *      - settings.typography
+ *      - settings.ms
+ *      - settings.ui
+ *
+ *  0. Tools
+ *      - tools.functions
+ *      - tools.mixins
+ *      - tools.grid
+ *      - tools.spacing
+ *      - tools.typography
+ *      - tools.buttons
+ *      - tools.inputs
+ *
+ *  1. Generic
+ *      - generic.normalize
+ *      - generic.reset
+ *      - generic.box-sizing
+ *
+ *  2. Elements
+ *      - elements.page
+ *      - elements.typography
+ *      - elements.images
+ *      - elements.forms
+ *      - elements.tables
+ *
+ *  3. Objects
+ *      - objects.grid
+ *      - objects.media
+ *      - objects.media-embed
+ *
+ *  4. Components
+ *      - components.navigation
+ *      - components.brand
+ *      - components.forms
+ *      - components.holder
+ *      - components.icons
+ *      - components.alerts
+ *      - components.buttons
+ *      - components.pagination
+ *      - components.styleguide
+ *      - components.styleguide-syntax
+ *
+ *  5. Trumps
+ *      - trumps.widths
+ *      - trumps.push
+ *      - trumps.colors
+ *      - trumps.borders
+ *      - trumps.states
+ *      - trumps.shame
+ *      - trumps.debug
+ *      - trumps.baseline-grid
+ *      - trumps.print
+ */
+
+    // 0. Settings
+    @import "settings.global";
+    @import "settings.breakpoints";
+    @import "settings.grid";
+    @import "settings.colors";
+    @import "settings.typography";
+    @import "settings.ms";
+    @import "settings.ui";
+
+    // 0. Tools
+    @import "tools.functions";
+    @import "tools.mixins";
+    @import "tools.grid";
+    @import "tools.spacing";
+    @import "tools.typography";
+    @import "tools.buttons";
+    @import "tools.inputs";
+
+    /* 1. Generic */
+    @import "generic.normalize";
+    @import "generic.reset";
+    @import "generic.box-sizing";
+
+    /* 2. Elements */
+    @import "elements.page";
+    @import "elements.typography";
+    @import "elements.images";
+    @import "elements.forms";
+    @import "elements.tables";
+
+    /* 3. Objects */
+    @import "objects.grid";
+    @import "objects.media";
+    @import "objects.media-embed";
+    @import "objects.inline-list";
+
+    /* 4. Components */
+    @import "components.navigation";
+    @import "components.brand";
+    @import "components.forms";
+    @import "components.holder";
+    @import "components.icons";
+    // @import "components.alerts";
+    @import "components.buttons";
+    // @import "components.pagination";
+    // @import "components.styleguide";
+    // @import "components.styleguide-syntax";
+    @import "components.section-header";
+
+    @import "components.taglines";
+    // @import "components.tiles";
+    @import "components.features";
+    @import "components.highlights";
+    @import "components.code";
+    @import "components.animatedfly";
+    @import "components.links";
+    @import "components.installation";
+    @import "components.footer-links";
+
+    /* 5. Trumps */
+    @import "trumps.widths";
+    @import "trumps.push";
+    @import "trumps.colors";
+    @import "trumps.borders";
+    @import "trumps.states";
+    @import "trumps.shame";
+    @import "trumps.debug";
+    @import "trumps.baseline-grid";
+    @import "trumps.print";
+    @import "trumps.animation";

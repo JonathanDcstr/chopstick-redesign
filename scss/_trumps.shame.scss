@@ -1,0 +1,113 @@
+/*
+    Trumps: Shame
+    ---
+    Hacks
+*/
+
+// Google maps images fix https://coderwall.com/p/nl1lba/img-max-width-100-breaks-google-maps
+.gmap img {
+    max-width: none !important;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.u-s-50 {
+    height: 50px;
+}
+
+.u-size-percent-30 {
+    width: 30%;
+}
+
+.u-no-list-indicator {
+    list-style-type: none;
+}
+
+.u-center {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+.u-align--right {
+    text-align: right;
+}
+
+.u-float--right {
+    float: right;
+}
+
+.u-margin-reset {
+    margin: 0;
+}
+
+.u-padding-reset {
+    padding: 0;
+}
+
+.u-offset--25p {
+    margin-left: 25%;
+}
+
+.u-offset--30p {
+    margin-left: 30%;
+}
+
+.u-offset--40p {
+    margin-left: 40%;
+}
+
+.u-offset--60p {
+    margin-left: 60%;
+}
+
+// utility classes for spacing
+.u-mt--1 {
+    @include margin-top(1);
+}
+
+.u-mt--2 {
+    @include margin-top(2);
+}
+
+.u-mb--1 {
+    @include margin-bottom(1);
+}
+
+.u-mb--2 {
+    @include margin-bottom(2);
+}
+
+.u-mb--3 {
+    @include margin-bottom(3);
+}
+
+.u-mtb--2-2 {
+    @include padding-tb(4,6);
+}
+
+.u-mtb--4-6 {
+    @include padding-tb(4,6);
+}
+
+.u-mtb--5-5 {
+    @include padding-tb(5,5);
+}
+
+.u-mtb--5-6 {
+    @include padding-tb(5,6);
+}
+
+.u-pb--2 {
+    @include padding-bottom(2);
+}
+
+.u-ptb--7-9 {
+    @include padding-tb(7,9);
+}
+
+.u-pt--7 {
+    @include padding-top(7);
+}

@@ -1,0 +1,38 @@
+/*
+    Components: brand
+    ---
+    Logo, brand elements, etc.
+*/
+
+.c-logo {
+    float: left;
+    font-family: $alpha-font-family;
+    font-weight: $alpha-font-weight;
+    margin-bottom: 0;
+    @include text-dimensions(30,1,0,1,1);
+
+    @include mq($bp3) {
+        @include padding-tb(1.25,1.25);
+    }
+
+    @include media-query("palm") {
+        @include text-dimensions(15,1,0,1,1);
+    }
+}
+
+    .c-logo__link {
+        display: block;
+        text-decoration: none;
+        color: $brand-primary-color;
+        text-indent: -9999px;
+        @include svg-bg(logo, $position: center center, $repeat: no-repeat);
+
+        &:hover,
+        &:focus {
+            color: $alpha-text-color;
+        }
+
+        @include media-query("palm") {
+            @include svg-bg(logo--mobile, $position: left center, $repeat: no-repeat);
+        }
+    }

@@ -1,0 +1,192 @@
+/*
+    Components: buttons
+    ---
+    Button sizes, styles, etc.
+*/
+
+.c-button {
+    display: inline-block;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+    border: 3px solid transparent;
+    white-space: nowrap;
+    transition: all .1s ease-in-out;
+    transition-property: background, color, border;
+    outline: none;
+    line-height: normal;
+    font-weight: 600;
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+    appearance:         none;
+    -webkit-font-smoothing: antialiased;
+    @include px-margin-right(2);
+    @include margin-tb(2,2);
+
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+
+    &:active {
+        outline: 0;
+        background-image: none;
+    }
+}
+
+// Button display
+
+.c-button--block {
+    display: block;
+    width: 100%;
+}
+
+.c-button--fll {
+    @include button-float(left);
+}
+
+.c-button--flr {
+    @include button-float(right);
+}
+
+// Button sizes
+
+.c-button--sm {
+    padding: em(5) em(10);
+}
+
+.c-button--md {
+    padding: em(9) em(25);
+}
+
+.c-button--lg {
+    padding: em(14.5) em(20);
+}
+
+// Button colors
+
+.c-button--alpha {
+    background-color: $white;
+    border-color: $brand-primary-color;
+    color: $brand-primary-color;
+
+    &,
+    &:visited {
+        color: $brand-primary-color;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: $brand-primary-color;
+        color: $white;
+    }
+
+    &:active {
+        background-color: $brand-primary-color;
+    }
+
+}
+
+.c-button--beta {
+    background-color: lighten($brand-secondary-color,3);
+    border-color: $brand-primary-color;
+
+    // &,
+    // &:visited {
+    //     color: $brand-primary-color;
+    // }
+
+    &:hover,
+    &:focus {
+        background-color: $white;
+        color: $brand-primary-color;
+        border-color: $white;
+    }
+
+    &:active {
+        background-color: $brand-secondary-color;
+    }
+}
+
+// Button to use on a $brand-secondary-color background
+.c-button--gamma {
+    background-color: $brand-primary-color;
+    border-color: $brand-primary-color;
+    color: $white;
+
+    &,
+    &:visited {
+        color: $white;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: $brand-secondary-color;
+        color: $brand-primary-color;
+        border-color: $brand-primary-color;
+    }
+
+    &:active {
+        background-color: $brand-secondary-color;
+    }
+}
+
+.c-button--delta {
+
+    background-color: transparent;
+    border-color: $brand-primary-color;
+    color: $white;
+    font-size: $ms1 + px;
+
+    &,
+    &:visited {
+        color: $brand-primary-color;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: $brand-primary-color;
+        color: white;
+        border-color: $brand-primary-color;
+    }
+
+    &:active {
+        background-color: $brand-secondary-color;
+    }
+}
+
+// Modifiers
+
+.c-button--postfix {
+    border-radius: 0 $radius $radius 0;
+    border-left: 0;
+}
+
+// Button-group
+
+.c-button-group {
+    position: relative;
+
+    .c-button--fll {
+        @include px-margin-right(1);
+    }
+
+    .c-button--flr {
+        @include px-margin-right(1);
+    }
+
+    @include clearfix;
+}
+
+// firefox inner border fix
+
+button::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}

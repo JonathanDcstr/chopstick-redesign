@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+{% include generic.head.html %}
+
+<body{% if page.section %} class="c-{{ page.section }}"{% endif%}>
+
+    <!-- Deprecated browser alert -->
+    {% include components.browser-alert.html %}
+    <!-- End deprecated browser alert -->
+
+    <!-- Page header -->
+    {% include components.header.html %}
+    <!-- End page header -->
+
+    {{ content }}
+
+    <!-- Page footer -->
+    {% include components.footer.html %}
+    <!-- End page footer -->
+
+    <!-- Footer javascript -->
+    {% include generic.javascript.html %}
+    <!-- End footer javascript -->
+
+</body>
+</html>

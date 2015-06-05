@@ -1,0 +1,16 @@
+.c-code {
+    font-family: $beta-font-family;
+}
+
+.c-code--inline {
+    font-size: 16px;
+    background: black;
+    // background: #BAB397;
+    color: white;
+    padding: 3px 10px;
+}
+
+.c-codeblock {
+    background: $brand-secondary-color;
+    padding: 30px;
+}

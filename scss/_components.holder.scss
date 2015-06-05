@@ -1,0 +1,80 @@
+/*
+    Component: holders
+    ---
+    Creates a horizontal row with padding
+*/
+
+.c-holder {
+    @include px-padding-lr(10,10);
+
+    @include mq($bp1) {
+        @include px-padding-lr(2,2);
+    }
+}
+    .c-holder--navigation {
+        @include padding-tb(2,2);
+        @include px-padding-lr(3,3);
+        background-color: $brand-secondary-color;
+
+        @include mq($bp1) {
+            @include px-padding-lr(2,2);
+        }
+    }
+
+    .c-holder--header {
+        background-color: $brand-secondary-color;
+        @include padding-tb(2,5);
+
+        @include mq($bp1) {
+            @include padding-tb(0,4);
+        }
+    }
+
+    .c-holder--install {
+        @include px-padding-lr(3,3);
+        background: url("../img/svg/cloud-left--large.svg");
+        // @TODO: add png fallback
+        background-attachment: fixed;
+        background-size: cover;
+
+        @include media-query("palm") {
+            @include svg-bg("installation-bg--mobile");
+        }
+    }
+
+    // secondary brand color background
+    .c-holder--alpha {
+        background-color: $brand-secondary-color;
+        @include padding-tb(4,4);
+    }
+
+    // white background holder
+    .c-holder--beta {
+        background-color: $white;
+        color: $brand-main-text-color;
+        @include padding-tb(4,4);
+    }
+
+    // primary brand color background
+    .c-holder--accent {
+        color: $brand-primary-color;
+        background-color: $brand-primary-color;
+        @include padding-tb(4,4);
+
+        h2, .c-feature-text {
+            color: white;
+        }
+
+        h3 {
+            color: $brand-accent-color;
+        }
+
+    }
+
+    .c-holder--footer {
+        @include padding-tb(3,1);
+        background: $brand-secondary-color;
+
+        @include svg-bg("header-bg-text", $position: center center);
+        background-size: cover;
+    }

@@ -1,0 +1,95 @@
+/*
+    Component: navigation
+    ---
+    Site navigation, breadcrumbs, etc.
+*/
+
+.c-main-nav {
+    width: 100%;
+
+    @include mq($bp3) {
+        display: block !important;
+        width: auto;
+        float: right;
+
+        li {
+            @include px-margin-lr(2,0);
+        }
+    }
+
+    @include media-query("palm") {
+        width: auto;
+    }
+}
+
+    .c-main-nav__list {
+        font-family: $alpha-font-family;
+        //border-top: 3px solid $brand-primary-color;
+        @include list-nav;
+        @include margin-bottom(.75);
+        @include padding-top(.75);
+
+        @include mq($bp3) {
+            border-top: none;
+            padding-top: 0;
+            margin-bottom: 0;
+            @include horizontal-nav();
+        }
+
+        @include clearfix;
+    }
+
+    .c-main-nav__list-item {
+
+    }
+
+    .c-main-nav__link {
+        display: block;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 600;
+        float: left;
+        @include text-dimensions(16,1,0,.25,.25);
+
+        @include mq($bp3) {
+            @include padding-tb(1.25,1.25);
+        }
+
+        &:hover,
+        .is-selected & {
+    	   // color: darken($alpha-link-color,50);
+           // text-decoration: underline;
+           border-bottom: 3px solid $brand-primary-color
+        }
+
+        @include media-query("palm") {
+            @include text-dimensions(18,1,0,.25,.25);
+            @include px-margin-lr(2,2);
+        }
+    }
+
+.c-main-nav-trigger {
+    display: block;
+    height: 2em;
+    width: 2em;
+    margin-top: 0.75em;
+    float: right;
+    text-indent: -9999px;
+    background-color: $brand-primary-color;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    @include text-dimensions($alpha-font-size,1,0);
+
+    .svg & {
+        background-image: url('../img/svg/icon-menu.svg');
+    }
+
+    @include mq($bp3) {
+        display: none;
+    }
+
+    &.is-active {
+        background-color: $alpha-link-color;
+        color: blue;
+    }
+}

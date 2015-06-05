@@ -1,0 +1,26 @@
+/*
+    Components: tiles
+    ---
+    styles to display colored tiles in styletile.
+*/
+
+.c-tile {
+    float: left;
+    display: block;
+    width: 100%;
+    height: 100px;
+}
+
+.c-tile--primary-color {
+    background: $brand-primary-color;
+}
+
+.c-tile--secondary-color {
+    background: $brand-secondary-color;
+}
+
+.c-tile--main-text-color {
+    background: $brand-main-text-color;
+}
+
+

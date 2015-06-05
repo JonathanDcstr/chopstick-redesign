@@ -1,0 +1,209 @@
+.c-list-item {
+    // it's recommended to just use the single-colon for best browser support.
+    &:after {
+        content: "";
+        position: relative;
+
+        @include mq($bp4) {
+            width: 500px;
+            height: 300px;
+        }
+    }
+}
+
+
+
+// .c-list-item--alpha {
+//     height: 200px;
+
+//     &:after {
+//         background: url(../img/svg/line-between-steps.svg);
+//         background-repeat: no-repeat;
+//         height: 150px;
+//         width: 20px;
+//         //@TODO: fix dirty fix
+//         left: 10px;
+//         top: -160px;
+//     }
+
+//     @include mq($bp2) {
+//         &:after {
+//             //@TODO: fix dirty fix
+//             top: -127px;
+//         }
+//     }
+
+//     @include mq($bp4) {
+//         &:after {
+//             background: url(../img/svg/line-1to2.svg);
+//             background-repeat: no-repeat;
+//             width: 500px;
+//             height: 300px;
+
+//             //@TODO: fix dirty fix
+//             left: 90%;
+//             top: -200px;
+//         }
+//     }
+// }
+
+.c-list-item--beta {
+    //@TODO: andere mogelijkheid?
+    height: 200px;
+
+    &:after {
+        background: url(../img/svg/line-between-steps.svg);
+        background-repeat: no-repeat;
+        height: 150px;
+        width: 20px;
+
+        //@TODO: fix dirty fix
+        left: 10px;
+        top: -160px;
+    }
+
+    @include mq($bp2) {
+        &:after {
+            //@TODO: fix dirty fix
+            top: -127px;
+        }
+    }
+
+    @include mq($bp4) {
+        height: 250px;
+
+        &:after {
+            background: url(../img/svg/line-2to3.svg);
+            background-repeat: no-repeat;
+            width: 500px;
+            height: 300px;
+            //@TODO: fix dirty fix
+            // left: -125%;
+            // top: -200px;
+
+            position: relative;
+            top: -170px;
+            left: 0;
+            margin-left: 530px;
+        }
+    }
+}
+
+.c-list-item--gamma {
+    //@TODO: andere mogelijkheid?
+    height: 200px;
+
+    @include mq($bp4) {
+        height: 250px;
+    }
+
+
+}
+
+.c-list-item--delta {
+
+    height: 200px;
+    position: relative;
+
+    &:before {
+        content: " ";
+        position: absolute;
+        background: url(../img/svg/line-between-steps.svg) no-repeat;
+        height: 80%;
+        width: 100%;
+        top: -162px;
+        left: 10px;
+
+        @include mq($bp4) {
+            background: url(../img/svg/line-1to2.svg) no-repeat;
+            height: 100%;
+            width: 100%;
+            top: -100%;
+            left: -100%;
+        }
+    }
+
+    &:after {
+        content: " ";
+        position: absolute;
+        background: url(../img/svg/line-between-steps.svg) no-repeat;
+        height: 80%;
+        width: 100%;
+        top: 38px;
+        left: 10px;
+
+        @include mq($bp4) {
+            background: url(../img/svg/line-2to3.svg) no-repeat;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: -100%;
+        }
+    }
+
+}
+
+.c-list-item--alpha {
+    height: 200px;
+    position: relative;
+    // temp fix
+    // overflow: hidden;
+
+    &:before {
+        content: " ";
+        position: absolute;
+        background: url(../img/svg/line-between-steps--large.svg) no-repeat;
+        height: 80%;
+        width: 100%;
+        top: -162px;
+        left: 10px;
+
+        @include mq($bp4) {
+            background: url(../img/svg/line-1to2.svg) no-repeat;
+            height: 100%;
+            width: 60%;
+            top: -75%;
+            left: -57%;
+        }
+
+
+    }
+
+}
+
+    .c-list-item__number {
+        width: 5px;
+        height: 5px;
+        padding: 5px 12px;
+        border-radius: 50%;
+        border: 4px solid $brand-primary-color;
+
+        text-align: center;
+        font-weight: 900;
+        color: $brand-primary-color;
+        background: $brand-secondary-color--light;
+    }
+
+    .c-list-item__title {
+        @include mq($bp1) {
+            @include padding-top(1);
+        }
+
+        @include mq($bp4) {
+            @include padding-top(0);
+        }
+    }
+
+    .c-list-item__list {
+        padding-left: 0;
+        list-style-type: none;
+    }
+
+        .c-list-item__list__item {
+            color: $brand-primary-color;
+            margin: 0;
+        }
+
+        .c-list-item__list__item--subtitle {
+            @include margin-top(1);
+        }

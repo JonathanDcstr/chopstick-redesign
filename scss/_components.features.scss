@@ -1,0 +1,23 @@
+/*
+    Components: features
+    ---
+    styles to display the features, etc.
+*/
+
+.c-feature {
+    @include padding-tb(1,0);
+}
+
+    .c-feature__icon {
+        margin: 0 auto;
+        width: 40%;
+        display: block;
+    }
+
+    .c-feature__text {
+        text-transform: uppercase;
+        font-weight: 900;
+        color: white;
+        text-align: center;
+        @include margin-top(1.5);
+    }

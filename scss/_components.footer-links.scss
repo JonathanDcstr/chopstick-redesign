@@ -1,0 +1,23 @@
+.c-footer-links {
+    text-align: center;
+    padding-left: 1rem;
+    font-weight: 600;
+}
+
+    .c-footer-links__item {
+
+        &:after {
+            content: "●";
+            color: $brand-primary-color;
+            padding-left: 1rem;
+            padding-right: 1rem;
+
+
+        }
+
+        &:last-child {
+            &:after {
+                content: "";
+            }
+        }
+    }

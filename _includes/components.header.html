@@ -1,0 +1,15 @@
+<div class="c-holder c-holder--navigation">
+    <div class="o-container">
+        <div class="o-grid">
+            <div class="o-grid__item js-fly-animationtrigger">
+                {% include components.logo.html %}
+                <nav class="c-main-nav">
+                    <ul class="c-main-nav__list">
+                        <li class="c-main-nav__list-item {% if page.url contains "index" %}is-selected{% endif %}"><a href="index.html" class="c-main-nav__link">Home</a></li>
+                        <li class="c-main-nav__list-item {% if page.url contains "documentation" %}is-selected{% endif %}"><a href="documentation.html" class="c-main-nav__link">Docs</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>

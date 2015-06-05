@@ -1,0 +1,121 @@
+---
+layout: styleguide
+title: Patterns
+section: styletile
+---
+{% include components.header.html %}
+
+{% include components.header1.html %}
+
+<section class="c-holder c-holder--beta">
+    <div class="o-container c-section--tiles">
+        <div class="o-grid o-grid--gutter">
+            <div class="o-grid__item u-1-of-3-bp4">
+                <div class="c-tile c-tile--primary-color"></div>
+                <p class="c-tagline c-tagline--tiles">#DA2327</p>
+            </div>
+            <div class="o-grid__item u-1-of-3-bp4">
+                <div class="c-tile c-tile--secondary-color"></div>
+                <p class="c-tagline c-tagline--tiles">#FEF5CC</p>
+            </div>
+            <div class="o-grid__item u-1-of-3-bp4">
+                <div class="c-tile c-tile--main-text-color"></div>
+                <p class="c-tagline c-tagline--tiles">#182223</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="c-holder c-holder--beta">
+    <div class="o-container">
+        <div class="o-grid">
+            <div class="o-grid--item  u-2-of-3-bp4">
+                <h2>Getting started is easy</h2>
+                <h3>And, it doesn’t take alot of time</h3>
+                <p>Fed up with frameworks that make <a href="#">every website</a> look and feel like a framework? You want a <strong>custom design</strong>, so you override defaults. Every time again. You have grown out of that. You are ready to leave Bootstrap or Foundation behind. Time to get proper support for your <strong>slick design skills</strong>.</p>
+                <a class="c-button c-button--alpha c-button--md" href="#" role="button">Read more</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="c-holder c-holder--alpha">
+    <div class="o-container">
+        <div class="o-grid o-grid--gutter c-feature">
+            <div class="o-grid__item  u-1-of-5-bp4">
+                <div class="c-feature">
+                    <div class="c-feature-scablable--icon">scalable</div>
+                    <p class="c-feature-text">scalable</p>
+                </div>
+            </div>
+            <div class="o-grid__item  u-1-of-5-bp4">
+                <div class="c-feature">
+                    <div class="c-feature-modular--icon ">modular</div>
+                    <p class="c-feature-text">modular</p>
+                </div>
+            </div>
+            <div class="o-grid__item  u-1-of-5-bp4">
+                <div class="c-feature">
+                    <div class="c-feature-fly--icon ">Chopstick</div>
+                </div>
+            </div>
+            <div class="o-grid__item  u-1-of-5-bp4">
+                <div class="c-feature">
+                    <div class="c-feature-singledept--icon ">single dept classes</div>
+                    <p class="c-feature-text">single dept class based</p>
+                </div>
+            </div>
+            <div class="o-grid__item  u-1-of-5-bp4">
+                <div class="c-feature">
+                    <div class="c-feature-bits--icon ">the bits that build the bits</div>
+                    <p class="c-feature-text">the bits that build the bits</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="c-holder c-holder--beta">
+    <div class="o-container">
+        <div class="o-grid">
+            <div class="o-grid__item  u-2-of-3-bp4">
+                <h2>Ordered list</h2>
+                <p>The SCSS part of Chopstick consists of two main folders ( <span class="sc-highlight">scss/shared, scss/theme</span> ) and two main files ( <span class="c-highlight">scss/_settings.scss, scss/screen.scss</span> ).</p>
+
+                <ol>
+                    <li>The <span class="c-highlight">scss/shared folder</span> contains all of the necessary mixins, includes, extends and other stuffto help you code faster. <strong>Nothing in this folder is ever directly compiled to CSS.</strong>You need to reference components of Chopstick from within your theme’s SCSS code.</li>
+
+                    <li>The <span class="c-highlight">scss/theme folder</span> will contain your theme. Everything in this folder will be compiled to CSS when you<span class="c-highlight">@import</span> it in screen.scss. We have prepared what we believe are some sensible defaults in the directoryroot and theme-specific modules in the modules folder, but feel free to delete anything in this folder youdon’t like. Also remember to remove the import rules from the <span class="c-highlight">screen.scss</span> file.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="c-holder c-holder--alpha">
+    <div class="o-container">
+        <a class="c-button c-button--gamma c-button--md" href="#" role="button">Download</a>
+    </div>
+</section>
+
+<section class="c-holder c-holder--beta">
+    <div class="o-container">
+        <div class="o-grid">
+            <div class="o-grid--item  u-2-of-3-bp4">
+                <h2>Some code</h2>
+                <h3>Easy to understand</h3>
+                <span class="c-code c-highlight">box-($amount, $left, $right);</span>
+                <p>Give an element a grid width (1, 2, 3, 8, . . .), gutter left & right in ems.</p>
+                <p class="c-tagline c-tagline--code-example">Example:</p>
+                <div class="c-code c-codeblock">
+                   .blog-detail { <br>
+                    &nbsp;&nbsp;    @include box-(12, 1, 1); <br>
+                    &nbsp;&nbsp;    // Span 12 columns <br>
+                    }
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+

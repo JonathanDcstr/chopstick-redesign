@@ -1,0 +1,25 @@
+/*
+    Component: section-header
+    ---
+    style header of each section
+*/
+
+// @TODO: maxwidth geven aan titel zonder dat alles toeklapt
+
+// .c-section-header {
+//     max-width: 33%;
+//     width:
+// }
+
+    .c-section-header__subtitle {
+        @include text-dimensions(22,1.2);
+        font-style: italic;
+        color: $brand-main-text-color;
+        @include margin-tb(0.25,2);
+    }
+
+.c-section-header__subtitle--light {
+    color: white;
+}
+
+

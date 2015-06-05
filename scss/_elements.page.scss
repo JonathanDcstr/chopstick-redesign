@@ -1,0 +1,37 @@
+/*
+    Elements: forms
+    ---
+    Default markup for page level elements
+*/
+
+html {
+    font: $alpha-font-weight $alpha-font-size/16*100%/#{$alpha-line-height} $alpha-font-family ;
+    -webkit-overflow-scrolling: touch;
+    background-color: white;
+    @include mq($bp5) {
+        font-size: $alpha-font-size/16*112.5%;
+    }
+
+    // @include mq($bp4) {
+    //     font-size: $alpha-font-size/16*105.5%;
+    // }
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizelegibility;
+    color: $alpha-text-color;
+    background-color: white;
+}
+
+::-moz-selection {
+    background-color: $brand-primary-color;
+    color: $brand-secondary-color;
+    text-shadow: none;
+}
+
+::selection {
+    background-color: $brand-primary-color;
+    color: $brand-secondary-color;
+    text-shadow: none;
+}
